@@ -1,0 +1,37 @@
+{
+    "name": "@mustak/webpack2021",
+    "version": "1.0.0",
+    "description": "My webpack project",
+    "main": "index.js",
+    "private": "true",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "npm run serve",
+      "build": "webpack --mode=production --node-env=production",
+      "build:dev": "webpack --mode=development",
+      "build:prod": "npm run build",
+      "watch": "webpack --watch",
+      "serve": "webpack serve"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mustak/webpack2021.git"
+    },
+    "keywords": [
+      "webpack",
+      "typescript",
+      "react"
+    ],
+    "author": "mustak <mhyaqub@yahoo.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/mustak/webpack2021/issues"
+    },
+    "homepage": "https://github.com/mustak/webpack2021#readme",
+    "devDependencies": {
+      "webpack": "^5.50.0",
+      "webpack-cli": "^4.7.2",
+      "webpack-dev-server": "^3.11.2"
+    }
+  }
+  
