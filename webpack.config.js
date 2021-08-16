@@ -1,8 +1,12 @@
-console.log(process.env.NODE_ENV);
+let mode = 'development';
+let devtool = 'source-map';
 
-const mode =
-    process.env.NODE_ENV === 'production' ? 'production' : 'development';
-const devtool = process.env.NODE_ENV === 'production' ? false : 'source-map';
+if (process.env.NODE_ENV === 'production') {
+    (mode = 'production'), (devtool = false);
+}
+// const mode =
+//     process.env.NODE_ENV === 'production' ? 'production' : 'development';
+// const devtool = process.env.NODE_ENV === 'production' ? false : 'source-map';
 
 module.exports = {
     mode: mode,
