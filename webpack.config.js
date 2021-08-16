@@ -6,7 +6,23 @@ const devtool = process.env.NODE_ENV === 'production' ? false : 'source-map';
 
 module.exports = {
     mode: mode,
-    // devtool: false,
+    devtool: devtool,
+
+    module: {
+        rules: [
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                    },
+                },
+            },
+        ],
+    },
+
     devServer: {
         contentBase: './dist',
     },
