@@ -2,7 +2,7 @@
 
 ## Summary
 - [x] Webpack setup
-- [ ] babel
+- [x] babel
 - [ ] sourcemaps
 - [ ] CSS, PostCSS, sass/scss
 - [ ] HMR (Hot module Reload)
