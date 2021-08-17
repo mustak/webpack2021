@@ -1,5 +1,5 @@
 import test1 from './module1';
-import './assets/styles/index.css';
+import './assets/styles/index.scss';
 
 const myObj1 = {
     ...test1,
