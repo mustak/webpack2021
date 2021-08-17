@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #5d5c61;
+    color: #dfdfdf;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: calc(4.5rem - 1rem);
+}

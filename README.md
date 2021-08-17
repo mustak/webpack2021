@@ -5,11 +5,11 @@
 - [x] babel
 - [x] sourcemaps
 - [ ] CSS, PostCSS, sass/scss
-- [ ] HMR (Hot module Reload)
+- [x] HMR (Hot module Reload)
 - [ ] browserlist
 - [ ] React with JSX,TSX
 - [ ] Images
-- [ ] Auto HTML
+- [x] Auto HTML
 - [ ] React Fast Refresh
 
 ## What we'll build
@@ -22,14 +22,26 @@ We'll be covering a ton of common functionalities needed in a Webpack project su
     - @babel/preset-env-plugin
  
 - CSS, PostCSS with postcss-preset-env for CSS fallbacks for better cross-browser support (may be SCSS).
+  - css-loader
+  - mini-css-extract-plugin
   
 -  Browserslist config for customizing the browsers you want to support for JS and CSS, all in one place. 
 
 - Outputting all CSS to a file with mini-css-extract-plugin
+  - mini-css-extract-plugin
 
 - HTML templates with html-webpack-plugin
+  - html-webpack-plugin
+  
+    ```javascript 
+    new HtmlWebpackPlugin({
+        template: './src/assets/index.ejs',
+        title: 'My webpack project',
+    })
+    ```
 
 - Cleaning the output folder every build with clean-webpack-plugin
+  - set `output.clean: true` in webpack.config.js [NEW in webpack 5]
 
 - React with the new automatic importing functionality supported in React 17+ through Babel.
 
