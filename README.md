@@ -4,7 +4,7 @@
 - [x] Webpack setup
 - [x] babel
 - [x] sourcemaps
-- [ ] CSS, PostCSS, sass/scss
+- [x] CSS, PostCSS, sass/scss
 - [x] HMR (Hot module Reload)
 - [ ] browserlist
 - [ ] React with JSX,TSX
@@ -23,7 +23,11 @@ We'll be covering a ton of common functionalities needed in a Webpack project su
  
 - CSS, PostCSS with postcss-preset-env for CSS fallbacks for better cross-browser support (may be SCSS).
   - css-loader
-  - mini-css-extract-plugin
+  - sass-loader
+  - sass
+  - postcss
+  - postcss-loader
+  - postcss-preset-env
   
 -  Browserslist config for customizing the browsers you want to support for JS and CSS, all in one place. 
 
