@@ -6,7 +6,7 @@
 - [x] sourcemaps
 - [x] CSS, PostCSS, sass/scss
 - [x] HMR (Hot module Reload)
-- [ ] browserlist
+- [x] browserlist
 - [ ] React with JSX,TSX
 - [ ] Images
 - [x] Auto HTML
@@ -30,6 +30,14 @@ We'll be covering a ton of common functionalities needed in a Webpack project su
   - postcss-preset-env
   
 -  Browserslist config for customizing the browsers you want to support for JS and CSS, all in one place. 
+   -  add browserslist to package.json
+        ```json 
+        "browserslist": [
+            "last 2 versions",
+            "not dead",
+            "> 0.5%"
+        ]
+        ```
 
 - Outputting all CSS to a file with mini-css-extract-plugin
   - mini-css-extract-plugin

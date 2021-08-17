@@ -5,11 +5,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let devMode = true;
 let mode = 'development';
 let devtool = 'source-map';
+let target = 'web';
 
 if (process.env.NODE_ENV === 'production') {
     mode = 'production';
     devtool = false;
     devMode = false;
+    target = 'browserslist';
 }
 console.log(devMode, mode, devtool);
 module.exports = {
@@ -22,6 +24,7 @@ module.exports = {
     },
     mode: mode,
     devtool: devtool,
+    target: target,
 
     module: {
         rules: [
@@ -36,7 +39,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.s?css$/i,
+                test: /\.(s[ac]|c))ss$/i,
                 use: [
                     devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                     'css-loader',
